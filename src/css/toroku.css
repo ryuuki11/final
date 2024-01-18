@@ -1,0 +1,120 @@
+body{
+    text-align: center;
+    font-size:clamp(15px, 3vw, 20px);
+}
+button{
+    font-size:clamp(10px, 3vw, 20px);
+    border:solid 1px black;
+    text-align:center;
+    width:10vw;
+    min-width:90px;
+    height:5vw;
+    max-height:40px;
+    min-height: 20px;
+    border-radius: 25px;
+    background-color: rgb(240, 241, 241);
+}
+input,select{
+    margin: 10px auto;
+    width:20vw;
+    min-width: 200px;
+    height:3vw;
+    min-height: 30px;
+    text-align:center;
+    border: solid 2px black;
+    font-size: clamp(15px, 3vw, 20px);
+  }
+  .head{
+    position: absolute;
+    width: 100vw;
+    height:100px;
+    background: linear-gradient(to bottom right,rgba(44, 222, 31, 0.25),rgba(182, 244, 207, 0.25));
+    top:0;
+    left:0;
+}
+.f{
+    margin-top: 150px;
+}
+.b1{
+    margin-top: 30px;
+}
+.b2{
+    margin-top: 100px;
+}
+
+  .display_none {
+    visibility: hidden;
+    margin: 0px auto 0 auto;
+    padding: 4%;
+    position: absolute;
+    width: 70vw;
+    left:11vw;
+    top:200px;
+    z-index: 80;
+    background-color: white;
+    text-align: center;
+}
+.display_none p{
+    margin-left: 0px;
+}
+.backv{
+    visibility: hidden;
+    position: fixed;
+    z-index: 70;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.3;
+}
+.display_none button{
+    margin-top:3vw;
+}
+
+.area {
+    width: 500px;
+    margin: auto;
+    flex-wrap: wrap;
+    display: flex;
+    margin-top: 150px;
+  }
+   
+  .tab_class {
+    width: calc(100%/5);
+    height: 50px;
+    background-color: rgb(220, 219, 219);
+    line-height: 50px;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    float: left;
+    order: -1;
+  }
+   
+  input.check{
+    display: none;
+  }
+   
+  input.check:checked + .tab_class {
+    background-color: rgb(133, 178, 180);
+    color: aliceblue;
+  }
+   
+  .content_class {
+    display: none;
+    width: 100%;
+  }
+   
+  input.check:checked + .tab_class + .content_class {
+    display: block;
+  }  
+  .image{
+    position:absolute;
+    bottom:50px;
+    right:50px;
+}
+.image img{
+    width:100px;
+    height:150px;
+}
